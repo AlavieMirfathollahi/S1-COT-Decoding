@@ -12,8 +12,8 @@ warning off
 %% Inputs *************************************************************************
 % Path Dataset (My PC)
 dataroot = {path to Dataset folder};
-% ind train test
-load({path to index of trai and test data, 5 folds 10 runs});
+% ind train/test
+load({path to index of train and test data, 5 folds 10 runs});
 
 % Regression
 num_Lag = 1; % No lag
