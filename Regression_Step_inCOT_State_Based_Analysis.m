@@ -253,10 +253,7 @@ for i_classes = 1:size(Fea_classes,1)
     
     %% fearure Selection  *********************************************************
     if feature_regression_selection == 1
-        thr_remove_Corr = 0.99;
-        k_MI = 3;
-        [predictors, predictors_test] = Select_features(predictors,Train_responses, predictors_test,...
-            thr_remove_Corr, k_MI);
+        {add your feature selection (for regression) here!}
     end
     
     %% Model TRAIN  ************************************************************
