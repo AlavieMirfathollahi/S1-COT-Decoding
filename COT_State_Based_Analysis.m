@@ -16,7 +16,7 @@ warning off
 
 %% Inputs *************************************************************************
 dataroot = {path to Dataset folder};
-load({path to index of train and test data, 5 folds 10 runs});      % ind train test
+load({path to index of train and test data, 5 folds 10 runs});    % see "Index_maker_CrossValidation.m"
 
 % Classification Inputs
 index_before = 0;                                                   index_after = 20;
