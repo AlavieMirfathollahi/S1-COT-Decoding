@@ -13,7 +13,7 @@ warning off
 % Path Dataset (My PC)
 dataroot = {path to Dataset folder};
 % ind train/test
-load({path to index of train and test data, 5 folds 10 runs});
+load({path to index of train and test data, 5 folds 10 runs});   % see "Index_maker_CrossValidation.m"
 
 % Regression
 num_Lag = 1; % No lag
