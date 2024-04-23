@@ -162,20 +162,17 @@ if Delay_sample > 1
     predictors_test = predictors_test(Delay_sample + 1 : end, :);
 end
 
-%% remove bad features *************************************************************************
+%% remove bad features ***********************************************************
 if remove_very_corr_Feature == 1
     [predictors, predictors_test] = remove_bad_features(predictors, predictors_test);
 end
 
-%% fearure Selection *************************************************************************
+%% fearure Selection *************************************************************
 if feature_regression_selection == 1
-    thr_remove_Corr = 0.99;
-    k_MI = 3;
-    [predictors, predictors_test] = Select_features(predictors,Train_responses, predictors_test,...
-        thr_remove_Corr, k_MI);
+   {add your feature selection (for regression) here!}
 end
 
-%% Model TRAINing *************************************************************************
+%% Model TRAINing ****************************************************************
 [y_predict_test_PLSr, y_predict_test_MLRr, response_test,...
     fea_maxRs_MLRr, fea_maxRs_PLSr, Rsq_Feas_MLRr,...
     Rsq_Feas_PLSr ,Rsqtest ] = PLS_MLR_ContDecoder...
