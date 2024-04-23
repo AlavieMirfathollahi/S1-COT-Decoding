@@ -28,7 +28,7 @@ window_statFeaClssification = index_after/2;              overlapp_statFeaClssif
 
 % Regression Inputs
 num_Lag = 1;                                                       PLS_mode = 'AllResp';
-second_model = 'MLR';                                            kernel_ord_Regression = 11;
+second_model = {'MLR'};                                            kernel_ord_Regression = 11;
 K_fold_regression = 3;                                             feature_regression_selection = 0;
 remove_very_corr_Feature = 1;                                  Delay_sample = 0;
 need_kernel_Regression = 'gammakrl';
